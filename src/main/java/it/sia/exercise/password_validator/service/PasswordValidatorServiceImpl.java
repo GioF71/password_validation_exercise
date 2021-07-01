@@ -16,7 +16,7 @@ public class PasswordValidatorServiceImpl implements PasswordValidatorService {
                     x -> {
                         return x.equals(passwordToValidate.getValidatingChar());
                     }).count();
-            passwordToValidate.setIsValid(passwordToValidate.getMinOccur() >= filteredListCount
+            passwordToValidate.setIsValid(filteredListCount >= passwordToValidate.getMinOccur()
                     && filteredListCount <= passwordToValidate.getMaxOccur());
         }
         return passwordsToValidate;
