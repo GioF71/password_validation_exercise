@@ -44,7 +44,7 @@ class PasswordValidatorServiceImplTest {
                         .builder()
                         .minOccur(1)
                         .maxOccur(3)
-                        .validatingChar("a")
+                        .validatingChar("f")
                         .stringToValidate("abcde")
                         .originalDataRequest("1-3 f: abcde")
                         .isValid(false)
