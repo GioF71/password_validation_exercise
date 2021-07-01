@@ -45,9 +45,9 @@ La soluzione è strutturata recuperando le stringhe in input, ed utilizzando un 
 
 I model factory sono estensione di una interfaccia comune che impiega generics per indicare origine e destinazione, le stringhe sono convertite secondo una logica di separazione per linea, per cui è possibile ottenere il risultato di più elementi, ed ottenere in risposta una stringa composta come:
 
-stringa1
-stringa2
-.....
+>stringa1
+>stringa2
+>.....
 
 Il controller avrà come dependency injection i mapper delle richieste e risposte, e del service su cui viene effettuata la logica.
 
